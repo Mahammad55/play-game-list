@@ -25,7 +25,6 @@ public class Main {
         array1.add("45");
         array1.add("100");
         array1.add("60");
-        array1.add("78");
         array1.add("0");
 
         List<String> array2=new ArrayList<>();
@@ -51,5 +50,27 @@ public class Main {
         array5.add("Oxygen");
         array5.add("Carbon");
         array5.add("Nitrogen");
+
+        List<List<String>> array=new ArrayList<>();
+        array.add(array1);
+        array.add(array2);
+        array.add(array3);
+        array.add(array4);
+        array.add(array5);
+
+        for(int i=0;i<arrQuestion.size();i++){
+            System.out.println(arrQuestion.get(i));
+            System.out.println(array.get(i));
+            String answer=sc.nextLine();
+            if(answer.equals(arrAnswer.get(i))){
+                System.out.println("Correct Answer ! Congrats :\n");
+            }else if(!arrAnswer.get(i).equals(answer)) {
+                System.out.println("Wrong Answer :)");
+                System.exit(0);
+            }
+            if(i==arrQuestion.size()-1){
+                System.out.println("You are win!");
+            }
+        }
     }
 }

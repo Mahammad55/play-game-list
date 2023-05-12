@@ -14,5 +14,11 @@ public class Main {
         arrQuestion.add("What city contains the Eiffel Towel?");
         arrQuestion.add("Which goes make the sound ridiculous?");
 
+        List<String> arrAnswer=new ArrayList<>();
+        arrAnswer.add("60");
+        arrAnswer.add("Ankara");
+        arrAnswer.add("100");
+        arrAnswer.add("Paris");
+        arrAnswer.add("Helium");
     }
 }
